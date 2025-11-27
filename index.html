@@ -4,83 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio de Wins Aurélien</title>
-  <style>
-    /*Le style globak du site*/
-    body {
-      margin: 0;
-      font-family: "Segoe UI", Arial, sans-serif;
-      background: linear-gradient(135deg, #0f172a, #1e293b);
-      color: #e2e8f0;
-    }
-    header {
-      padding: 30px;
-      text-align: center;
-      background: rgba(15, 23, 42, 0.6);
-      backdrop-filter: blur(6px);
-      border-bottom: 1px solid rgba(255,255,255,0.1);
-    }
-    h1 {
-      margin: 0;
-      font-size: 42px;
-    }
-    h2 {
-      border-left: 4px solid #60a5fa;
-      padding-left: 10px;
-      margin-top: 40px;
-    }
-    section {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 20px;
-      background: rgba(255,255,255,0.05);
-      border-radius: 12px;
-      backdrop-filter: blur(4px);
-    }
-
-    /*Le style de la partie compétence*/
-    .skills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 15px;
-    }
-    .skill {
-      background: rgba(96,165,250,0.2);
-      padding: 8px 12px;
-      border-radius: 20px;
-      font-weight: bold;
-    }
-
-    /*Le style de la partie projets*/
-    .project {
-      border: 1px solid rgba(255,255,255,0.1);
-      padding: 15px;
-      border-radius: 10px;
-      margin-bottom: 15px;
-      background: rgba(255,255,255,0.04);
-      transition: transform 0.2s;
-    }
-    .project:hover {
-      transform: translateX(4px);
-    }
-    a {
-      color: #60a5fa;
-      text-decoration: none;
-    }
-
-    /*Le style de la partie contacts*/
-    .contact-box {
-      padding: 20px;
-      background: rgba(15,23,42,0.5);
-      border-radius: 10px;
-      text-align: center;
-      border: 1px solid rgba(255,255,255,0.1);
-    }
-    .email {
-      font-size: 20px;
-      font-weight: bold;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -110,13 +34,28 @@
 </section>
 
 <section>
-  <h2>Mes Projets</h2>
-
-  <div class="project">
-    <h3><a href="https://github.com/Aure123lien/Portfolio-Informatique">📁 Tous mes projets</a></h3>
-    <p>Retrouvez ici tous mes projets Java, Python, HTML/CSS et exercices développés durant mon apprentissage</p>
+  <h2>Formation / Études</h2>
+  <div class="education">
+    <p><strong>2017 – 2023 :</strong> </p> La 1 ère a la 6 ème secondaire, Obtenu mon diplome CESS Technique de transition science appliqué en 2023(Equivalent a un bac Général spécialisation en mathématique et physqiue-chimie)
+    <p><strong>2023 – 2025 :</strong> </p> 2 année en bachelier en chimie qui mon permis de faire une réorientation en 2024-2025 qui m'on permis de comprends que mon domaine était l'informatique
+    <p><strong>2025 - 2026 :</strong> </p> Autoformation en informatique, devellopement de différrent proje, quelques heure de cours de mathématique, informatique grace a un professeur particulier
   </div>
+</section>
 
+<section>
+  <h2>Mes Projets</h2>
+  <div class="project">
+    <h3><a href="https://github.com/Aure123lien/Portfolio-Informatique" target="_blank">📁 Tous mes projets</a></h3>
+    <p>Retrouvez ici tous mes projets Java, Python, HTML/CSS et exercices développés durant mon apprentissage.</p>
+  </div>
+</section>
+
+<section>
+  <h2>CV</h2>
+  <div class="contact-box">
+    <p>Téléchargez mon CV ici :</p>
+    <a href="CV_Wins_Aurelien.pdf" download class="cv-link">⬇ Télécharger le CV (PDF)</a>
+  </div>
 </section>
 
 <section>
@@ -127,8 +66,10 @@
   </div>
 </section>
 
+<script src="script.js"></script>
 </body>
 </html>
+
 
 
 
