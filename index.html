@@ -3,81 +3,133 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mon Portfolio Informatique, Wins Aurélien</title>
-</head>
+  <title>Portfolio de Wins Aurélien</title>
   <style>
-  body {
-    font-family: Arial, sans-serif;
-    background: #0f172a;
-    color: white;
-    margin: 0;
-    padding: 0;
-  }
-  h1, h2 {
-    color: #60a5fa;
-  }
-  section {
-    background: rgba(255,255,255,0.05);
-    margin: 30px auto;
-    max-width: 900px;
-    padding: 20px;
-    border-radius: 10px;
-  }
-  a { color: #60a5fa; }
-</style>
+    /*Le style globak du site*/
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: #e2e8f0;
+    }
+    header {
+      padding: 30px;
+      text-align: center;
+      background: rgba(15, 23, 42, 0.6);
+      backdrop-filter: blur(6px);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    h1 {
+      margin: 0;
+      font-size: 42px;
+    }
+    h2 {
+      border-left: 4px solid #60a5fa;
+      padding-left: 10px;
+      margin-top: 40px;
+    }
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 12px;
+      backdrop-filter: blur(4px);
+    }
+
+    /*Le style de la partie compétence*/
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 15px;
+    }
+    .skill {
+      background: rgba(96,165,250,0.2);
+      padding: 8px 12px;
+      border-radius: 20px;
+      font-weight: bold;
+    }
+
+    /*Le style de la partie projets*/
+    .project {
+      border: 1px solid rgba(255,255,255,0.1);
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      background: rgba(255,255,255,0.04);
+      transition: transform 0.2s;
+    }
+    .project:hover {
+      transform: translateX(4px);
+    }
+    a {
+      color: #60a5fa;
+      text-decoration: none;
+    }
+
+    /*Le style de la partie contacts*/
+    .contact-box {
+      padding: 20px;
+      background: rgba(15,23,42,0.5);
+      border-radius: 10px;
+      text-align: center;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+    .email {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
 <body>
+
+<header>
   <h1>Wins Aurélien</h1>
-  <p>Demande pour etre Futur étudiant en Informatique a Bordeaux</p>
-</body>
-</html>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    background: #0f172a;
-    color: white;
-    margin: 0;
-    padding: 0;
-  }
-  h1, h2 {
-    color: #60a5fa;
-  }
-  section {
-    background: rgba(255,255,255,0.05);
-    margin: 30px auto;
-    max-width: 900px;
-    padding: 20px;
-    border-radius: 10px;
-  }
-  a { color: #60a5fa; }
-</style>
+  <p>Futur étudiant au BUT Informatique – IUT de Bordeaux</p>
+</header>
 
-</body>
-<section id="about">
+<section>
   <h2>À propos</h2>
-  <p>Je m'appelle Wins Aurélien et je souhaite intégrer votre formation Informatique à Bordeaux</p>
+  <p>
+    Je m'appelle <strong>Wins Aurélien</strong> et je suis passionné par le développement informatique depuis un certain temps.
+    Mon objectif est d'intégrer le <strong>votre formation en Informatique à Bordeaux</strong> pour développer mes compétences
+    en programmation, en algorithmique et en conception de projets.
+  </p>
 </section>
 
-<section id="skills">
-  <h2>Compétences acquises</h2>
-  <ul>
-    <li>Python</li>
-    <li>Java</li>
-    <li>CSS</li>
-    <li>HTML</li>
-    <li>Git</li>
-  </ul>
+<section>
+  <h2>Compétences</h2>
+  <div class="skills">
+    <span class="skill">HTML</span>
+    <span class="skill">CSS</span>
+    <span class="skill">Java</span>
+    <span class="skill">Python</span>
+    <span class="skill">Git</span>
+  </div>
 </section>
 
-<section id="projects">
-  <h2>Mes projets</h2>
-  <p><a href="https://github.com/Aure123lien/Portfolio-Informatique">Voir tous les projets</a></p>
+<section>
+  <h2>Mes Projets</h2>
+
+  <div class="project">
+    <h3><a href="https://github.com/Aure123lien/Portfolio-Informatique">📁 Tous mes projets</a></h3>
+    <p>Retrouvez ici tous mes projets Java, Python, HTML/CSS et exercices développés durant mon apprentissage</p>
+  </div>
+
 </section>
 
-<section id="contact">
+<section>
   <h2>Contact</h2>
-  <p>Email : <strong>winsaurelien@gmail.com</strong></p>
+  <div class="contact-box">
+    <p>Information de contact :</p>
+    <p class="email">winsaurelien@gmail.com</p>
+  </div>
 </section>
 
+</body>
 </html>
+
+
 
 
