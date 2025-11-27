@@ -1,16 +1,48 @@
+/* barre de navigation */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(15,23,42,0.8);
+  backdrop-filter: blur(6px);
+  padding: 10px 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  color: #e2e8f0;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.navbar a:hover {
+  color: #60a5fa;
+}
+
 /* Style global */
 body {
   margin: 0;
+  padding-top: 70px;
   font-family: "Segoe UI", Arial, sans-serif;
   background: linear-gradient(135deg, #0f172a, #1e293b);
   color: #e2e8f0;
 }
 
 header {
-  padding: 30px;
+  padding: 40px;
   text-align: center;
   background: rgba(15, 23, 42, 0.6);
-  backdrop-filter: blur(6px);
   border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
@@ -74,7 +106,7 @@ a {
   text-decoration: none;
 }
 
-/* Contact / CV */
+/* Contact et mon CV */
 .contact-box {
   padding: 20px;
   background: rgba(15,23,42,0.5);
@@ -103,17 +135,22 @@ a {
   background-color: #3b82f6;
 }
 
-/* Education */
+/* Formation */
 .education p {
   margin: 10px 0;
 }
 
-/* Responsive */
+/* Adpater tous a l'écran */
 @media (max-width: 600px) {
   .skills {
     flex-direction: column;
-    gap: 8px;
+  }
+  .navbar ul {
+    flex-wrap: wrap;
+    gap: 10px;
   }
 }
+
+
 
 
