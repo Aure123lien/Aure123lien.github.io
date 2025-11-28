@@ -13,4 +13,31 @@ document.querySelectorAll('.navbar a').forEach(link => {
   });
 });
 
-console.log("Portfolio de Wins Aurélien chargé avec menu interactif !");
+// Animation au scroll
+function animateOnScroll() {
+  const sections = document.querySelectorAll('section');
+  const scrollTop = window.pageYOffset;
+
+  sections.forEach(section => {
+    const offset = section.offsetTop - window.innerHeight + 100;
+    if (scrollTop > offset) {
+      section.style.opacity = '1';
+      section.style.transform = 'translateY(0)';
+    }
+  });
+}
+
+window.addEventListener('scroll', animateOnScroll);
+window.addEventListener('load', animateOnScroll);
+
+// Animation des compétences au hover
+document.querySelectorAll('.skill').forEach(skill => {
+  skill.addEventListener('mouseenter', function() {
+    this.style.animation = 'pulse 0.6s ease-in-out';
+  });
+  skill.addEventListener('mouseleave', function() {
+    this.style.animation = '';
+  });
+});
+
+console.log("Portfolio de Wins Aurélien chargé avec animations interactives !");
